@@ -3,9 +3,9 @@ console.log(process.env.MONGO_URL)
 const express = require("express");
 const mongoose = require("mongoose");
 
-const { userRouter } = require("./routes/user");
-const { courseRouter } = require("./routes/course");
-const { adminRouter } = require("./routes/admin");
+const { userRouter } = require("./user");
+const { courseRouter } = require("./course");
+const { adminRouter } = require("./admin");
 const app = express();
 app.use(express.json());
 
